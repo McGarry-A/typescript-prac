@@ -72,3 +72,29 @@
 // type MaybePopularTag = PopularTag | null
 
 // const dragonsTag: MaybePopularTag = 'dragon'
+
+// void is undefined or null
+// const doSomething = (): void => {}
+// avoid using type any as it turns off typescript checks 
+
+
+// const doSomething = (): never => {
+//     throw 'never';
+// }
+// a function that returns never is a function that will never end 
+
+// We can not assign unknown directly into other types
+
+// let vAny: any = 10
+// let vUnknown: unknown = 10
+
+// let s1: string = vAny
+// let s2: string = vUnknown as string
+
+// Type assertion -- want to convert one type to another
+
+// console.log(vAny.foo())
+// console.log(vUnknown.foo())
+
+// let pageNumber: string = "1"
+// let numericPageNumber: number = (pageNumber as unknown) as number
